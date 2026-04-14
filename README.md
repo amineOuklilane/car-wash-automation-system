@@ -58,7 +58,7 @@ Each station is activated automatically when a vehicle is detected within a مح
 
 ## 🎥 Demo Video
 👉 Watch the simulation:  
-[Add your YouTube or Google Drive link here]
+[https://youtu.be/FONUr4kZX1I]
 
 ---
 
@@ -107,7 +107,7 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250
 ---
 
 ## 👤 Author
-**[Amine Ouklilane]**  
+**Amine Ouklilane**  
 Electrical Engineering Student  
 
 - Interested in Embedded Systems, Automation, and Smart Systems  
