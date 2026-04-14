@@ -52,7 +52,7 @@ Each station is activated automatically when a vehicle is detected within a مح
 ---
 
 ## 📷 Circuit Design
-![Circuit](images/circuit.jpg)
+![Circuit](CarWashCircuit.png)
 
 ---
 
@@ -63,7 +63,7 @@ Each station is activated automatically when a vehicle is detected within a مح
 ---
 
 ## 💻 Code Structure
-All source code is available in the `code/` folder.
+All source code is available in the `Code/` folder.
 
 Main functionalities:
 - Continuous system monitoring loop  
@@ -107,7 +107,7 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250
 ---
 
 ## 👤 Author
-**[Your Name]**  
+**[Amine Ouklilane]**  
 Electrical Engineering Student  
 
 - Interested in Embedded Systems, Automation, and Smart Systems  
