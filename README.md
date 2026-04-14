@@ -1,10 +1,12 @@
-# 🚗 Automated Car Wash System  
-### Arduino-Based Simulation (Tinkercad)
+# 🚗 Smart Car Wash Automation System  
+### Arduino-Based Simulation Using Tinkercad
+
+---
 
 ## 📌 Project Overview
-This project presents the design and simulation of an **automated car wash system** using Arduino on Tinkercad. The system detects the presence of a vehicle and executes a predefined washing sequence based on user-selected modes.
+This project presents the design and simulation of a **smart automated car wash system** using Arduino. The system detects the presence of a vehicle and executes a complete washing process based on user-selected modes.
 
-The goal is to demonstrate **automation logic, sensor integration, and embedded system control** in a real-world industrial scenario.
+The objective is to demonstrate key concepts in **automation, embedded systems, and sensor-based control** applied to a real-world industrial scenario.
 
 ---
 
@@ -29,7 +31,7 @@ The system is divided into four functional stations:
 - **Soap + Wax Booth:** Final cleaning and polishing  
 - **Drying Booth:** Air-based drying system  
 
-Each station is activated automatically when a vehicle is detected within a محدد distance using proximity sensors.
+Each station is automatically activated when a vehicle is detected within a محدد range using proximity sensors.
 
 ---
 
@@ -58,51 +60,42 @@ Each station is activated automatically when a vehicle is detected within a مح
 
 ## 🎥 Demo Video
 👉 Watch the simulation:  
-    https://youtu.be/FONUr4kZX1I
+https://youtu.be/FONUr4kZX1I
 
 ---
 
-## 💻 Code Structure
-All source code is available in `Code`.
+## 💻 Code
+The Arduino source code is available in this repository:
 
-Main functionalities:
-- Continuous system monitoring loop  
-- Sensor-based detection logic  
-- Sequential activation of stations  
-- Emergency shutdown control  
+- `Code.ino` → contains the full implementation of the system logic  
 
 ---
 
 ## 🧠 Implementation Details
 
-- The system operates using a **continuous loop** that monitors:
-  - Switch state (ON/OFF)
+- The system operates using a **continuous loop** to monitor:
+  - Switch state (ON/OFF)  
   - Sensor inputs  
 
 - When a vehicle is detected:
   - The corresponding station is activated  
-  - LEDs simulate real-world actions  
+  - LEDs simulate the real-world washing process  
 
-- A **main switch** allows immediate shutdown at any stage of operation (safety feature)
+- A **main switch** allows immediate shutdown of the system at any time (safety feature)
 
 ---
 
 ## 🚀 Future Improvements
 - Integrate temperature sensors for system safety  
 - Add emergency button with buzzer alarm  
-- Replace polling with interrupt-based system  
+- Replace polling with interrupt-based control  
 - Add LCD display for user interface  
-- Mobile app or IoT integration  
+- Integrate IoT or mobile application control  
 
 ---
 
-## 🌍 Academic Context
-This project is inspired by collaborative work between:
-- NSIT (India)  
-- URJC (Spain)  
-
-📄 Reference paper:  
-https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250
+## 🌍 Project Context
+This project was developed as part of my personal portfolio in Electrical Engineering, focusing on automation systems, embedded programming, and real-world industrial simulations.
 
 ---
 
@@ -110,10 +103,10 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250
 **Amine Ouklilane**  
 Electrical Engineering Student  
 
-- Interested in Embedded Systems, Automation, and Smart Systems  
-- Currently building projects to strengthen my engineering portfolio  
+- Interested in Embedded Systems, Automation, and Smart Technologies  
+- Currently building a strong portfolio for international academic and career opportunities  
 
 ---
 
 ## 💡 Portfolio Note
-This project is part of my journey to develop **real-world engineering systems** combining hardware simulation and control logic, with the goal of pursuing advanced studies and international opportunities.
+This project reflects my ability to design and simulate **automated systems using embedded technologies**, with a focus on practical applications and scalable solutions.
