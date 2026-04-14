@@ -1,71 +1,119 @@
-# Automated Carwash System
-### Using Tinkercad Simulator For Arduino Circuits
-#### *Part of Indo-Spanish Project by NSIT(India) and URJC(Spain)*
-Link to the paper: <https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250>
+# 🚗 Automated Car Wash System  
+### Arduino-Based Simulation (Tinkercad)
 
-## Abstract
+## 📌 Project Overview
+This project presents the design and simulation of an **automated car wash system** using Arduino on Tinkercad. The system detects the presence of a vehicle and executes a predefined washing sequence based on user-selected modes.
 
-The project aims at building an automated car-wash system for the user. Based on the user’s choice, one of the three types of car wash is selected and the car is washed accordingly as it is slowly steered towards the exit.
+The goal is to demonstrate **automation logic, sensor integration, and embedded system control** in a real-world industrial scenario.
 
-The three car wash options are as follows:
-* Water only
-* Water + Soap
-* Water + Soap + Wax
+---
 
-It’s up to the user to either steer manually or to use the automated system.
+## 🎯 Key Features
+- Automated car detection using ultrasonic sensors  
+- Multiple washing modes:
+  - Water only  
+  - Water + Soap  
+  - Water + Soap + Wax  
+- Sequential control of washing stations  
+- Emergency stop using a main switch  
+- LED-based simulation of system workflow  
 
-The system comprises of four different booths/stations for different purposes:
-* __Water Booth:__ Cleans the car using water only
-* __Soap Booth:__ Cleans the car using soap
-* __Soap+Wax Booth:__ Cleans the car using soap. Wax is used to add a final shine to the car.
-* __Drying Booth:__ To dry the car using air jets.
+---
 
-The car wash system uses a main switch which can be turned OFF at any time (even in the middle of a wash, if there’s an emergency).
+## ⚙️ System Architecture
 
-The project uses LEDs to demonstrate the workflow of the system.
+The system is divided into four functional stations:
 
+- **Water Booth:** Initial cleaning using water  
+- **Soap Booth:** Application of cleaning agents  
+- **Soap + Wax Booth:** Final cleaning and polishing  
+- **Drying Booth:** Air-based drying system  
 
+Each station is activated automatically when a vehicle is detected within a محدد distance using proximity sensors.
 
+---
 
-## Components Used
+## 🛠️ Technologies & Components
 
-* Arduino Uno &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1
-* RGB LEDs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 2
-* Red LED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1
-* Resistors	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7
-* Sliding Switch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1
-* Ultrasonic Proximity Sensors &nbsp;: 4
-* Potentiometer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1
-* Connecting Wires 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: As per the circuit requirements
+### 💻 Technologies
+- Arduino (Embedded C / Arduino IDE)  
+- Tinkercad Simulator  
 
+### 🔌 Hardware Components
+- Arduino Uno  
+- Ultrasonic Sensors (x4)  
+- RGB LEDs (x2)  
+- Standard LEDs  
+- Resistors  
+- Sliding Switch (main control)  
+- Potentiometer  
+- Connecting wires  
 
-## The Circuit
-[Link to Demonstration Video](https://github.com/ArshiaKaul/Automated-Carwash-System/blob/master/AutomatedCarWashSystem(Arduino)-NSIT.mp4)
+---
 
-Circuit Image
-![Circuit Image](https://github.com/ArshiaKaul/Automated-Carwash-System/blob/master/CarWashCircuit.png "Circuit Image")
+## 📷 Circuit Design
+![Circuit](images/circuit.jpg)
 
-## Implementation
+---
 
-The project uses a sliding switch as the ON/OFF switch for the main power supply. Turning OFF the switch will disable the entire system immediately. The system continuously polls in a loop to keep track of the status of the sliding button. As soon as it finds out that the sliding button is in the OFF state, it disables the system. Turning ON the sliding switch starts the system from its initial state.
+## 🎥 Demo Video
+👉 Watch the simulation:  
+[Add your YouTube or Google Drive link here]
 
-Suitable delays have been provided in the system to enable the user to enter his/her choice of car-wash, to steer the car towards the desired booth and to steer the car away from the booth. Ultrasonic proximity sensors have been used to detect the presence of a car at a particular booth. As soon as the car reaches in the two meter proximity of the sensor, the booth starts with its functionality. This has been demonstrated by the use of LEDs.
+---
 
-When the car exits, the car wash system begins a new cycle of washing for the cars standing in the queue. The system can be turned OFF using the sliding switch in case no other cars are present in the queue.
+## 💻 Code Structure
+All source code is available in the `code/` folder.
 
-## Further Stages Of Development
+Main functionalities:
+- Continuous system monitoring loop  
+- Sensor-based detection logic  
+- Sequential activation of stations  
+- Emergency shutdown control  
 
-* A temperature sensor can be incorporated to detect overheating of any component of the system.
+---
 
-* A push button that can be pressed by the user in case of emergency, sending off an alarm. This can be accomplished using a Piezo buzzer.
+## 🧠 Implementation Details
 
-* The buzzer will send out an alarm until the sliding switch is not turned OFF.
+- The system operates using a **continuous loop** that monitors:
+  - Switch state (ON/OFF)
+  - Sensor inputs  
 
-* Instead of polling to check the status of the sliding switch or emergency status, another thread can be used which will run in the background and come into action as soon as it detects a change of state in either of the two.
+- When a vehicle is detected:
+  - The corresponding station is activated  
+  - LEDs simulate real-world actions  
 
+- A **main switch** allows immediate shutdown at any stage of operation (safety feature)
 
-## Team Experience
+---
 
-The project provided the team with a chance to work in collaboration with
-students from a different country. There was a sense of being separated by boundaries but being connected by common interests including the keenness to learn and explore diverse technologies. It was the first time our team worked with Arduino. The experience was fun, but challenging at times. Overcoming the obstacles together is what made the project even more enjoyable.
+## 🚀 Future Improvements
+- Integrate temperature sensors for system safety  
+- Add emergency button with buzzer alarm  
+- Replace polling with interrupt-based system  
+- Add LCD display for user interface  
+- Mobile app or IoT integration  
+
+---
+
+## 🌍 Academic Context
+This project is inspired by collaborative work between:
+- NSIT (India)  
+- URJC (Spain)  
+
+📄 Reference paper:  
+https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.22250
+
+---
+
+## 👤 Author
+**[Your Name]**  
+Electrical Engineering Student  
+
+- Interested in Embedded Systems, Automation, and Smart Systems  
+- Currently building projects to strengthen my engineering portfolio  
+
+---
+
+## 💡 Portfolio Note
+This project is part of my journey to develop **real-world engineering systems** combining hardware simulation and control logic, with the goal of pursuing advanced studies and international opportunities.
