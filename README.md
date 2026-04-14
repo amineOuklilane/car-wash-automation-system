@@ -63,7 +63,7 @@ Each station is activated automatically when a vehicle is detected within a مح
 ---
 
 ## 💻 Code Structure
-All source code is available in the `Code/` folder.
+All source code is available in `Code`.
 
 Main functionalities:
 - Continuous system monitoring loop  
